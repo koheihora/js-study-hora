@@ -11,7 +11,7 @@ function doRequest(req, res){
   fs.readFile('./hello.html', 'UTF-8',
               function(err, data){
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write('data');
+  res.write(data);
   res.end();
               });
 }
